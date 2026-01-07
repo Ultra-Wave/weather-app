@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather — David Chukwunonye Osigwe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" role="main">
+    <header class="header">
+      <div class="brand">
+        <h1>Weather</h1>
+        <p class="subtitle">Realtime forecasts — clean & professional</p>
+      </div>
+      <div class="controls">
+        <label class="unit">
+          <input id="unitToggle" type="checkbox" />
+          <span>°C / °F</span>
+        </label>
+        <div class="search">
+          <input id="q" type="search" placeholder="Search city (e.g. London)" aria-label="Search city" />
+          <button id="searchBtn" aria-label="Search">Search</button>
+          <button id="geoBtn" aria-label="Use my location">My location</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel" id="panel" aria-live="polite">
+      <div class="loading" id="loading">Loading…</div>
+
+      <div class="current" id="current" hidden>
+        <div class="left">
+          <div class="place" id="place"></div>
+          <div class="time" id="time"></div>
+          <div class="temp" id="temp"></div>
+          <div class="desc" id="desc"></div>
+        </div>
+        <div class="right">
+          <img id="icon" alt="" />
+          <div class="conditions">
+            <div><span id="feels"></span></div>
+            <div><strong>Humidity:</strong> <span id="humidity"></span></div>
+            <div><strong>Wind:</strong> <span id="wind"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast" id="forecast" hidden></div>
+
+      <div class="error" id="error" hidden></div>
+    </section>
+
+    <footer class="footer">
+      <small>Built by David Chukwunonye Osigwe • Data from OpenWeatherMap</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
