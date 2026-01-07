@@ -15,7 +15,7 @@ A simple and responsive weather application that allows users to check real-time
 - OpenWeatherMap API
 
 ## Live Demo
-(https://ultra-wave.github/weather-app/)
+(https://ultra-wave.github.io/weather-app/)
 
 ## Purpose
 This project was built to practice API integration, asynchronous JavaScript, and responsive UI design.
